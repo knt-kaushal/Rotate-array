@@ -2,6 +2,7 @@
 
 arr = [1,2,3,4,5,6,7];
 k=2;
+console.log(`Given Array : ${arr} \nk=2`);
 rotArrR2L=[];
 for(i=k ; i<arr.length ; i++)
 {
@@ -11,7 +12,7 @@ for(i=arr.length-k ; i<arr.length ; i++)
 {
     rotArrR2L[i] = arr[i-(arr.length-k)];
 }
-console.log(`Given Array : ${arr} \nk=2 \nRotated Array Right to Left: ${rotArrR2L}`);
+console.log(`Rotated Array Right to Left: ${rotArrR2L}`);
 
 //-----------Rotate Left to Right-----------
 
@@ -25,3 +26,4 @@ for(i=0 ; i<k ; i++)
     rotArrL2R[i] = arr[arr.length-k+i];
 }
 console.log(`Rotated Array Left to Right: ${rotArrL2R}`);
+
